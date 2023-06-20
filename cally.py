@@ -546,6 +546,9 @@ def full_call_graph(functions, **kwargs):
                             print_buf(std_buf, "}")
                         print_buf(std_buf, f"subgraph cluster_{cnt}" + " {")
                         need_close = True
+                        name_label=directory.split(".")
+                        print_buf(std_buf, f"label = \"{name_label[0]}.{name_label[1]}\";")
+                        print_buf(std_buf, f"fontsize=\"30pt\"")
                     print_buf(std_buf, "rankdir=LR;")
                     if colors:
                         color = cols[cnt % len(cols)]
