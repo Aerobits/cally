@@ -28,7 +28,7 @@
         {
             "label": "create binary",
             "type": "shell",
-            "command": "../scripts/buildLinux.sh",
+            "command": "../build.sh",
             "options": {
 				"cwd": "${workspaceFolder}/build"
 			},
